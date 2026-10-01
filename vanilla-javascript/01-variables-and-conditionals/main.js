@@ -1,4 +1,4 @@
-// Exercise 2 - Variables and Conditionals
+// Exercise 1 - Variables and Conditionals
 // Uses prompt(), so run in the browser (open index.html), not Node.
 
 // Part 1 - Store my age, then use if/else to log whether it's old enough to vote.
