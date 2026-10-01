@@ -9,7 +9,16 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 // Part 2 - Function: take an array of numbers, return their average.
+const numbers = [1, 2, 3];
 
+function average(nums) {
+  const sum = nums.reduce((acc, cur) => acc + cur, 0);
+  return sum / nums.length;
+}
+
+// Test on two different arrays to show it works on any input
+console.log(average(numbers)); // 2
+console.log(average([1, 2, 3, 4, 5])); // 3
 
 // Part 3 - Loop through an array of numbers to find and log the largest one.
 
