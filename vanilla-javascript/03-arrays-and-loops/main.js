@@ -70,3 +70,13 @@ console.log(hasName(names, "Sam")); // false
 
 
 // Part 6 - Use a for loop + if to collect even numbers from 1 to 20 into an array, then log it.
+
+const evenNumbers = [];
+
+for (let number = 1; number <= 20; number++) {
+  if (number % 2 === 0) {
+    evenNumbers.push(number);
+  }
+}
+
+console.log(evenNumbers); // [2,  4,  6,  8, 10, 12, 14, 16, 18, 20]
