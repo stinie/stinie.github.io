@@ -58,5 +58,15 @@ console.log(sentence); "Vanilla JavaScript is fun"
 
 // Part 5 - Function: take an array of names + one name; return true/false if it's in the array.
 
+function hasName(names, nameToFind) {
+  return names.includes(nameToFind);
+}
+
+const names = ["Christine", "Robbie", "Sue"];
+
+console.log(hasName(names, "Sue")); // true
+console.log(hasName(names, "Sam")); // false
+
+
 
 // Part 6 - Use a for loop + if to collect even numbers from 1 to 20 into an array, then log it.
