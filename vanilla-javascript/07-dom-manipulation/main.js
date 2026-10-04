@@ -20,5 +20,26 @@ addItemButton.addEventListener("click", () => {
 });
 
 // Part 3 - Change an image's source when a button is clicked.
+const changeImageButton = document.querySelector("#changeImageButton");
+const myImage = document.querySelector("#myImage");
+
+changeImageButton.addEventListener("click", () => {
+  myImage.src = "https://picsum.photos/id/1025/300/200";
+});
 
 // Part 4 - Validate a login form on submit; show a success/failure message.
+const loginForm = document.querySelector("#loginForm");
+const loginMessage = document.querySelector("#loginMessage");
+
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault(); // stop the page reloading, so JS can handle it
+
+  const username = document.querySelector("#username").value;
+  const password = document.querySelector("#password").value;
+
+  if (username === "admin" && password === "1234") {
+    loginMessage.textContent = "Login successful!";
+  } else {
+    loginMessage.textContent = "Wrong username or password.";
+  }
+});
