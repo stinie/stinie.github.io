@@ -22,6 +22,22 @@ console.log(average([1, 2, 3, 4, 5])); // 3
 
 // Part 3 - Loop through an array of numbers to find and log the largest one.
 
+function largestElement(arr) {
+    let largestNum = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largestNum) {
+            largestNum = arr[i];
+        }
+    }
+    return largestNum;
+}
+
+const list = [11, 21, 13, 33, 7, 5, 9, 10, 54, 2, 1, 0];
+const result = largestElement(list);
+
+console.log("The largest element in the array is: " + result);
+
+
 
 // Part 4 - Make an array of words, join them into a sentence, log the sentence.
 
