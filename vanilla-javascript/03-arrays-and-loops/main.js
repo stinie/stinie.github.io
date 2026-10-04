@@ -35,11 +35,25 @@ function largestElement(arr) {
 const list = [11, 21, 13, 33, 7, 5, 9, 10, 54, 2, 1, 0];
 const result = largestElement(list);
 
-console.log("The largest element in the array is: " + result);
+console.log("The largest element in the array is: " + result); // 54
 
 
 
 // Part 4 - Make an array of words, join them into a sentence, log the sentence.
+
+const words = ["Vanilla", "JavaScript", "is", "fun"];
+let sentence = "";
+
+for (let i = 0; i < words.length; i++) {
+  sentence += words[i];
+
+  if (i < words.length - 1) {
+    sentence += " ";
+  }
+}
+
+console.log(sentence); "Vanilla JavaScript is fun"
+
 
 
 // Part 5 - Function: take an array of names + one name; return true/false if it's in the array.
