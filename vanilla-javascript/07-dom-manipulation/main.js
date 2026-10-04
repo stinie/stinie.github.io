@@ -10,7 +10,14 @@ changeTextButton.addEventListener("click", () => {
 });
 
 // Part 2 - Add a new <li> to a list when a button is clicked.
+const addItemButton = document.querySelector("#addItemButton");
+const todoList = document.querySelector("#todoList");
 
+addItemButton.addEventListener("click", () => {
+  const newItem = document.createElement("li"); // make a new <li> element
+  newItem.textContent = "New item";             // put text inside it
+  todoList.appendChild(newItem);                // attach it to the <ul>
+});
 
 // Part 3 - Change an image's source when a button is clicked.
 
